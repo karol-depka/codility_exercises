@@ -1,0 +1,23 @@
+import {solution} from "./solution";
+
+describe('fut', () => {
+
+  it(`codility example`, () => {
+    expect(solution( [-1, 6, 3, 4, 7, 4])).toEqual(4);
+  });
+
+
+  it(`empty`, () => {
+    expect(solution( [])).toEqual(0);
+  });
+
+  it(`zero inversions`, () => {
+    expect(solution( [1, 2])).toEqual(0);
+  });
+
+  it(`1 inversion`, () => {
+    expect(solution( [2, 1])).toEqual(1);
+  });
+
+
+});

@@ -1,0 +1,28 @@
+import {solution} from "./solution";
+
+describe('fut', () => {
+
+  it(`codility example`, () => {
+    expect(solution( 2, [3, 5, 7, 6, 3])).toEqual(9);
+  });
+
+  it(`1 elem`, () => {
+    expect(solution( 2, [7])).toEqual(1);
+  });
+  it(`2 elems, 2 slices`, () => {
+    expect(solution( 2, [1, 9])).toEqual(2);
+  });
+
+  it(`2 elems, 3 slices`, () => {
+    expect(solution( 2, [1, 2])).toEqual(3);
+  });
+
+  it(`3 elems, 6 slices`, () => {
+    expect(solution( 2, [1, 2, 3])).toEqual(6);
+  });
+
+  it(`3 elems, 6 slices, all equal`, () => {
+    expect(solution( 2, [1, 1, 1])).toEqual(6);
+  });
+
+});
