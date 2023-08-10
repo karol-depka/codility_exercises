@@ -1,0 +1,48 @@
+import {solution, solutionBruteForce} from "./solution";
+import {fillRandomInts, getRandomIntMaxEcl} from "../../testUtils/testUtils";
+
+describe('fut', () => {
+
+  it(`codility example 1`, () => {
+    expect(solution( [-3, 1, 2, -2, 5, 6])).toEqual(60);
+  });
+
+  it(`just 3`, () => {
+    expect(solution( [2,3,5])).toEqual(30);
+  });
+
+  it(`just 3, 0`, () => {
+    expect(solution( [0,0,0])).toEqual(0);
+  });
+
+  it(`just 3, 1 zero`, () => {
+    expect(solution( [-5,-6,0])).toEqual(0);
+  });
+
+  it(`just 3, 2 negative`, () => {
+    expect(solution( [-5,-6,7])).toEqual(210);
+  });
+
+  it(`3 negative`, () => {
+    expect(solution( [-5,-6,-7])).toEqual(-210);
+  });
+
+  // it(`6 numbers`, () => {
+  //   expect(solution( [-5,-6,-7, 9, 10, 11])).toEqual(-210);
+  // });
+  //
+  // it(`7 numbers`, () => {
+  //   expect(solution( [-5,-6,-7, 9, 10, 11, 13])).toEqual(-210);
+  // });
+
+  it(`handles random data`, () => {
+    for ( let i = 0; i< 100_000; i++ ) {
+      const arraySize = getRandomIntMaxEcl(3, 10)
+      const array = fillRandomInts(arraySize, -10, 11)
+      expect(solution( array)).toEqual(solutionBruteForce( array));
+
+    }
+  });
+
+
+});

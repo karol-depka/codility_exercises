@@ -1,0 +1,10 @@
+import {solution} from "./solution";
+
+describe('fut', () => {
+
+  it(`codility example 1`, () => {
+    expect(solution( 'ACCAABBC')).toEqual('AC');
+  });
+
+
+});

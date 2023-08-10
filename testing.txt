@@ -1,0 +1,3 @@
+# https://jestjs.io/docs/27.x/cli#--notify
+
+nx test codility4 --watch --silent=false --noStackTrace

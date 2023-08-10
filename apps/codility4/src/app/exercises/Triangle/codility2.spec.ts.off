@@ -1,0 +1,33 @@
+import {solution} from "./solution";
+import {fillRandomInts, getRandomIntMaxEcl} from "../../testUtils/testUtils";
+
+describe('fut', () => {
+
+  it(`codility example 1`, () => {
+    expect(solution( [10, 2, 5, 1, 8, 20])).toEqual(1);
+  });
+
+  it(`codility example 2`, () => {
+    expect(solution( [10, 50, 5, 1])).toEqual(0);
+  });
+
+
+  // it(`6 numbers`, () => {
+  //   expect(solution( [-5,-6,-7, 9, 10, 11])).toEqual(-210);
+  // });
+  //
+  // it(`7 numbers`, () => {
+  //   expect(solution( [-5,-6,-7, 9, 10, 11, 13])).toEqual(-210);
+  // });
+
+  // it(`handles random data`, () => {
+  //   for ( let i = 0; i< 100_000; i++ ) {
+  //     const arraySize = getRandomIntMaxEcl(3, 10)
+  //     const array = fillRandomInts(arraySize, -10, 11)
+  //     // expect(solution( array)).toEqual(solutionBruteForce( array));
+  //
+  //   }
+  // });
+
+
+});
