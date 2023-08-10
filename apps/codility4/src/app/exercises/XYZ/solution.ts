@@ -2,13 +2,7 @@
 
 
 /**
- * Task Score
- * 81%
- * Correctness
- * 100%
- * Performance
- * 62%
- *
+
  * */
 export function solution(A: number[]): number {
 

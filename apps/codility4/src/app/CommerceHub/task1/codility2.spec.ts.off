@@ -1,9 +1,40 @@
-import {solution} from "./solution.ts.off";
+import {solution} from "./solution";
 
 describe('fut', () => {
 
   it(`codility example 1`, () => {
-    expect(solution( 'ACCAABBC')).toEqual('AC');
+    expect(solution( 'acb')).toEqual('ab');
+  });
+
+  it(`codility example 2`, () => {
+    expect(solution( 'hot')).toEqual('ho');
+  });
+
+  it(`codility example 3`, () => {
+    expect(solution( 'codility')).toEqual('cdility');
+    // expect(solution( 'codility')).toEqual('codilit');
+  });
+
+  it(`codility example 4`, () => {
+    expect(solution( 'aaaa')).toEqual('aaa');
+  });
+
+  it(`codility example +`, () => {
+    // expect(solution( 'aazz')).toEqual('azz'); // Not correct: higher alphabetically
+    expect(solution( 'aazz')).toEqual('aaz');
+  });
+
+  it(`codility example + 2`, () => {
+    expect(solution( 'zaaaazz')).toEqual('aaaazz');
+    // expect(solution( 'zaaaazz')).toEqual('aaa');
+  });
+
+  it(`just 2`, () => {
+    expect(solution( 'ac')).toEqual('a');
+  });
+
+  it(`just 2 za`, () => {
+    expect(solution( 'za')).toEqual('a');
   });
 
 

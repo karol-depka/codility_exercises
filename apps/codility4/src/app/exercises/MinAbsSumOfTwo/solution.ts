@@ -13,6 +13,9 @@
  *
  * 12 min
  *
+ * Detected time complexity:
+ * O(N * N)
+ *
  * */
 export function solution(A: number[]): number {
 
