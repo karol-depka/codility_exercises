@@ -30,7 +30,11 @@ function processStr(context: {longest: string, count: number}, baseStr: string, 
   // return longest
 }
 
-/** Complexity:
+/**
+ * Similar to https://app.codility.com/programmers/trainings/5/three_letters/
+ *
+ * Complexity:
+ *
  * I think
  * worst case
  * O(3^10) ; not really, because of bail in isCorrect
